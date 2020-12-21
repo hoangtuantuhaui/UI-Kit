@@ -1669,3 +1669,59 @@ button:focus,
 .products-kid .cate-grid .product-item:before {
   border-color: #FFD74A;
 }
+.product-detail-right .field.qty label {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #BDBDBD;
+  border-radius: 3px;
+  align-items: center;
+  padding: 0 11px;
+  cursor: pointer;
+  max-width: 90px;
+}
+.product-detail-right .field.qty input,
+.product-detail-right .field.qty span {
+  content: "+";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #BDBDBD;
+}
+.product-detail-right .field.qty input {
+  max-width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 0;
+  min-height: 30px;
+  overflow: hidden;
+  border: 1px solid #BDBDBD;
+  border-bottom: none;
+  border-top: none;
+}
+.product-detail-right .field.qty input::-webkit-inner-spin-button,
+.product-detail-right .field.qty input::-webkit-inner-spin-button {
+  opacity: 0 !important;
+  width: 0;
+  display: none;
+}
+.product-detail-right .field.qty span {
+  cursor: pointer;
+}
+.product-detail-right .field.qty span:before {
+  content: "";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #BDBDBD;
+}
+.product-detail-right .field.qty span.up:before {
+  content: "+";
+}
+.product-detail-right .field.qty span.down:before {
+  content: "-";
+}
